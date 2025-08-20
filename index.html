@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>baisahukam.29 | Rajputi Poshaks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for smoothness */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #9f1239; /* rose-700 */
+      border-radius: 10px;
+    }
+    /* Hide the video controls on mobile */
+    @media (max-width: 640px) {
+      video {
+        max-height: 240px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 via-pink-100 to-pink-200 min-h-screen flex flex-col font-sans text-gray-800">
+  <!-- Header/Nav -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex flex-wrap items-center justify-between p-4">
+      <div class="flex items-center space-x-3">
+        <div class="w-14 h-14 bg-pink-200 rounded-lg flex items-center justify-center shadow-md overflow-hidden">
+          <!-- Logo placeholder with alt describing the original uploaded logo -->
+          <img 
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d98a6526-5d63-4c8b-96af-436d79d4d890.png" 
+            alt="Logo showing a stylized peacock with vibrant teal and dark pink feathers, intricate floral and lotus design surrounding it, and the text 'Bhavana' in elegant serif font on a soft pink background" 
+            class="object-contain max-h-14 max-w-14"
+            onerror="this.style.display='none'"
+          />
+        </div>
+        <div>
+          <h1 class="text-2xl font-extrabold text-rose-800 tracking-tight select-none">baisahukam.29</h1>
+          <p class="text-pink-700 text-sm font-semibold tracking-wide select-none">RAJPUTI POSHAKS</p>
+        </div>
+      </div>
+      <nav class="space-x-6 font-semibold text-pink-700 hidden md:flex">
+        <a href="#collections" class="hover:text-rose-900 transition">Collections</a>
+        <a href="#purchase" class="hover:text-rose-900 transition">Purchase</a>
+        <a href="#customer-media" class="hover:text-rose-900 transition">Customer Gallery</a>
+        <a href="#contact" class="hover:text-rose-900 transition">Contact Us</a>
+        <button id="adminLoginBtn" class="bg-rose-600 hover:bg-rose-700 text-white px-3 py-1 rounded shadow-sm transition">Admin Panel</button>
+      </nav>
+      <button id="mobileMenuBtn" aria-label="Toggle menu"
+        class="block md:hidden p-2 rounded hover:bg-pink-300 focus:outline-none focus:ring-2 focus:ring-rose-700">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-rose-700">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <nav id="mobileMenu" class="hidden bg-pink-50 md:hidden border-t border-pink-200 shadow-inner w-full">
+      <a href="#collections" class="block px-5 py-3 border-b border-pink-200 font-semibold text-rose-700 hover:bg-pink-300 transition">Collections</a>
+      <a href="#purchase" class="block px-5 py-3 border-b border-pink-200 font-semibold text-rose-700 hover:bg-pink-300 transition">Purchase</a>
+      <a href="#customer-media" class="block px-5 py-3 border-b border-pink-200 font-semibold text-rose-700 hover:bg-pink-300 transition">Customer Gallery</a>
+      <a href="#contact" class="block px-5 py-3 border-b border-pink-200 font-semibold text-rose-700 hover:bg-pink-300 transition">Contact Us</a>
+      <button id="adminLoginBtnMobile" class="w-full text-left px-5 py-3 font-semibold text-white bg-rose-600 hover:bg-rose-700 transition">Admin Panel</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-rose-100 flex flex-col items-center justify-center text-center py-20 px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-rose-800 max-w-4xl leading-tight mb-6">Traditional & Exquisite Rajputi Poshaks Collection</h2>
+    <p class="text-rose-700 max-w-2xl mb-8 font-semibold">Experience the royal charm of Rajasthan with our Bridal, Festival, Function, and Casual Poshaks crafted with passion and heritage.</p>
+    <a href="#collections"
+      class="bg-rose-700 text-white px-8 py-3 rounded-md shadow-lg font-bold hover:bg-rose-800 transition">Explore Collections</a>
+  </section>
+
+  <!-- Collections Section -->
+  <section id="collections" class="container mx-auto px-4 py-12">
+    <h3 class="text-3xl font-extrabold text-rose-800 mb-8 border-b-4 border-rose-600 inline-block pb-2">Our Collections</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Category card -->
+      <div data-category="Bridal poshaks" class="cursor-pointer group rounded-lg shadow-md bg-white hover:shadow-xl hover:scale-[1.03] transition-transform">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/be3b505b-a71d-4c78-bec1-69b1721fb809.png" alt="Elegant bridal poshak dress displayed on mannequin with rich embroidery and vibrant colors in traditional Rajputi style" class="rounded-t-lg object-cover w-full h-48" onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8335204a-5ccc-49df-80e0-57572c7ebc59.png';">
+        <div class="p-4 text-center">
+          <h4 class="font-semibold text-lg text-rose-700 group-hover:text-rose-900">Bridal Poshaks</h4>
+          <p class="text-pink-600 mt-1 text-sm">Royal wedding outfits with intricate designs.</p>
+        </div>
+      </div>
+
+      <div data-category="Festival poshaks" class="cursor-pointer group rounded-lg shadow-md bg-white hover:shadow-xl hover:scale-[1.03] transition-transform">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b171be66-e298-4663-ab14-ed795992608a.png" alt="Vibrantly colored festival poshaks featuring bright reds and yellows with traditional patterns and mirror work" class="rounded-t-lg object-cover w-full h-48" onerror="this.onerror=null;this.src='https://placehold.co/600x400/png?text=Image+not+found';">
+        <div class="p-4 text-center">
+          <h4 class="font-semibold text-lg text-rose-700 group-hover:text-rose-900">Festival Poshaks</h4>
+          <p class="text-pink-600 mt-1 text-sm">Celebrate festivities with colorful attires.</p>
+        </div>
+      </div>
+
+      <div data-category="Function poshaks" class="cursor-pointer group rounded-lg shadow-md bg-white hover:shadow-xl hover:scale-[1.03] transition-transform">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a4c4a47a-aa2d-4a18-9488-467dad76625a.png" alt="Traditional Rajputi function poshaks in elegant pastel shades with gold embroidery perfect for social gatherings" class="rounded-t-lg object-cover w-full h-48" onerror="this.onerror=null;this.src='https://placehold.co/600x400/png?text=Image+not+found';">
+        <div class="p-4 text-center">
+          <h4 class="font-semibold text-lg text-rose-700 group-hover:text-rose-900">Function Poshaks</h4>
+          <p class="text-pink-600 mt-1 text-sm">Graceful attires for special occasions.</p>
+        </div>
+      </div>
+
+      <div data-category="Casual poshaks" class="cursor-pointer group rounded-lg shadow-md bg-white hover:shadow-xl hover:scale-[1.03] transition-transform">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c009626a-6c78-4650-af71-dba6dcab8ad6.png" alt="Comfortable casual Rajputi poshaks suitable for everyday wear, in soft fabrics with light embroidery" class="rounded-t-lg object-cover w-full h-48" onerror="this.onerror=null;this.src='https://placehold.co/600x400/png?text=Image+not+found';">
+        <div class="p-4 text-center">
+          <h4 class="font-semibold text-lg text-rose-700 group-hover:text-rose-900">Casual Poshaks</h4>
+          <p class="text-pink-600 mt-1 text-sm">Elegant casual wear with traditional flair.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="productsContainer" class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Dynamic products will appear here -->
+    </div>
+    <p id="noProductsMsg" class="mt-8 text-center text-pink-700 font-semibold hidden">Select a collection to see products.</p>
+  </section>
+
+  <!-- Purchase Section -->
+  <section id="purchase" class="bg-rose-50 py-12 px-4">
+    <div class="container mx-auto max-w-3xl">
+      <h3 class="text-3xl font-extrabold text-rose-800 mb-6 border-b-4 border-rose-600 inline-block pb-2 text-center">Purchase Your Favorite Poshak</h3>
+
+      <form id="purchaseForm" class="bg-white rounded-lg shadow-lg p-6 space-y-6" novalidate>
+        <div>
+          <label for="purchaseProduct" class="block font-semibold text-rose-700 mb-2">Choose Product</label>
+          <select id="purchaseProduct" name="purchaseProduct" required
+            class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600">
+            <option value="">-- Select a product --</option>
+          </select>
+          <p class="text-xs text-pink-700 mt-1" id="productPriceInfo"></p>
+        </div>
+
+        <div>
+          <label for="customerName" class="block font-semibold text-rose-700 mb-2">Full Name</label>
+          <input type="text" id="customerName" name="customerName" required placeholder="Your full name"
+            class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600" />
+        </div>
+
+        <div>
+          <label for="customerPhone" class="block font-semibold text-rose-700 mb-2">Phone Number</label>
+          <input type="tel" id="customerPhone" name="customerPhone" required placeholder="+91 9123456789"
+            pattern="^\+91\s?\d{10}$" 
+            class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600" />
+          <p class="text-xs text-pink-700 mt-1">Format: +91 followed by 10 digit number</p>
+        </div>
+
+        <div>
+          <label for="customerAddress" class="block font-semibold text-rose-700 mb-2">Delivery Address</label>
+          <textarea id="customerAddress" name="customerAddress" rows="3" required placeholder="Your full delivery address"
+            class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600"></textarea>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-rose-700 mb-2">Payment Method</label>
+          <div class="flex items-center space-x-5">
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="radio" name="paymentMethod" value="gpay_scanner" required class="form-radio text-rose-700" />
+              <span class="ml-2">G Pay Scanner</span>
+            </label>
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="radio" name="paymentMethod" value="gpay_number" required class="form-radio text-rose-700" />
+              <span class="ml-2">G Pay Number</span>
+            </label>
+          </div>
+        </div>
+
+        <div id="gpayNumberInfo" class="p-4 bg-rose-100 border border-rose-300 rounded text-rose-800 hidden" tabindex="0">
+          <p><strong>Send payment to G Pay Number:</strong> <span id="gpayNumber" class="font-mono">+91 8830304067</span></p>
+        </div>
+
+        <div id="gpayScannerInfo" class="p-4 bg-rose-100 border border-rose-300 rounded flex justify-center hidden">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bd834727-4f75-4e49-a59b-5832e29d30a3.png" alt="Placeholder showing a G Pay QR code scanner for payments" class="rounded shadow-md" onerror="this.style.display='none'"/>
+        </div>
+
+        <button type="submit" class="w-full bg-rose-700 hover:bg-rose-800 text-white font-bold py-3 rounded-md shadow-lg transition focus:ring-4 focus:ring-rose-300 focus:outline-none" aria-label="Submit purchase order">Place Order</button>
+        <p id="purchaseMessage" class="mt-4 text-center font-semibold text-green-700 hidden"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Customer Media Section -->
+  <section id="customer-media" class="container mx-auto px-4 py-12 max-w-7xl">
+    <h3 class="text-3xl font-extrabold text-rose-800 mb-6 border-b-4 border-rose-600 inline-block pb-2">Customer Videos & Photos</h3>
+    <p class="italic text-sm mb-8 text-pink-700 max-w-xl">View heartwarming photos and videos shared by customers wearing their Rajputi Poshaks.</p>
+
+    <div id="customerMediaGallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Dynamically added media -->
+    </div>
+    <p id="noCustomerMedia" class="mt-8 text-center text-pink-700 font-semibold hidden">No customer media available yet.</p>
+  </section>
+
+  <!-- Contact Us -->
+  <footer id="contact" class="bg-rose-700 text-rose-50 py-12 px-4 mt-auto">
+    <div class="container mx-auto max-w-4xl text-center space-y-4">
+      <h3 class="text-3xl font-extrabold mb-2">Contact Us</h3>
+      <p class="text-lg font-semibold">Address: Jodhpur, Rajasthan.</p>
+      <p class="text-lg font-semibold">Phone: <a href="tel:+918830304067" class="underline hover:text-pink-300">+91 8830304067</a></p>
+      <p class="text-lg font-semibold">Email: <a href="mailto:baisahukam.29@gmail.com" class="underline hover:text-pink-300">baisahukam.29@gmail.com</a></p>
+      <p class="text-lg font-semibold">WhatsApp Group: 
+        <a href="https://chat.whatsapp.com/L8Y4i9Xg5AEFAXt0kGtnK3?mode=ac_t" target="_blank" rel="noopener noreferrer" class="underline hover:text-pink-300">Join Here</a>
+      </p>
+      <div class="flex justify-center space-x-6 mt-6">
+        <a href="https://instagram.com/baisahukam.29" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-pink-300 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm7.75 3.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7.75a4.25 4.25 0 110 8.5 4.25 4.25 0 010-8.5zm0 1.5a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5z"/></svg>
+        </a>
+        <a href="https://youtube.com/bhavanapawar29" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:text-pink-300 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6zm8.99-2.25c.06-1.83.06-4.43 0-6.25a3 3 0 00-3.07-3.06c-2.57-.09-6.43-.09-9 0a3 3 0 00-3.07 3.06c-.06 1.82-.06 4.42 0 6.25a3 3 0 003.07 3.06c2.57.09 6.43.09 9 0a3 3 0 003.07-3.06z"/></svg>
+        </a>
+      </div>
+      <p class="mt-8 text-sm opacity-75">© 2024 baisahukam.29 - RAJPUTI POSHAKS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Admin Panel Modal -->
+  <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-60 hidden">
+    <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-xl p-6 relative">
+      <button id="closeAdminBtn" aria-label="Close admin panel" class="absolute top-4 right-4 text-rose-700 hover:text-rose-900 font-bold text-xl">&times;</button>
+      
+      <div id="adminLoginScreen">
+        <h3 class="text-2xl font-extrabold text-rose-800 mb-6 text-center">Admin Login</h3>
+        <form id="adminLoginForm" class="max-w-sm mx-auto space-y-6" novalidate>
+          <div>
+            <label for="adminPass" class="block font-semibold text-rose-700 mb-2">Password</label>
+            <input type="password" id="adminPass" name="adminPass" placeholder="Enter admin password" required
+              class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600" />
+          </div>
+          <button type="submit" class="w-full bg-rose-700 hover:bg-rose-800 text-white font-bold py-3 rounded transition">Login</button>
+          <p id="adminLoginError" class="mt-4 text-center text-red-600 font-semibold hidden">Incorrect password, try again.</p>
+          <p class="mt-6 text-xs text-pink-600 italic text-center">* For demo purpose, admin password is: <strong>admin123</strong></p>
+        </form>
+      </div>
+
+      <div id="adminDashboard" class="hidden">
+        <h3 class="text-2xl font-extrabold text-rose-800 mb-6 text-center">Admin Panel</h3>
+        
+        <section class="mb-10">
+          <h4 class="text-xl font-semibold mb-4 border-b border-rose-600 pb-2">Add New Product</h4>
+          <form id="addProductForm" class="space-y-4" novalidate>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="productName" class="block font-semibold text-rose-700 mb-1">Product Name</label>
+                <input type="text" id="productName" name="productName" placeholder="Enter product name" required
+                  class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600" />
+              </div>
+              <div>
+                <label for="productPrice" class="block font-semibold text-rose-700 mb-1">Price (₹)</label>
+                <input type="number" id="productPrice" name="productPrice" placeholder="Enter price" min="1" required
+                  class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600" />
+              </div>
+            </div>
+            <div>
+              <label for="productCategory" class="block font-semibold text-rose-700 mb-1">Category</label>
+              <select id="productCategory" name="productCategory" required
+                class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600">
+                <option value="">-- Select category --</option>
+                <option value="Bridal poshaks">Bridal Poshaks</option>
+                <option value="Festival poshaks">Festival Poshaks</option>
+                <option value="Function poshaks">Function Poshaks</option>
+                <option value="Casual poshaks">Casual Poshaks</option>
+              </select>
+            </div>
+            <div>
+              <label for="productDescription" class="block font-semibold text-rose-700 mb-1">Description</label>
+              <textarea id="productDescription" name="productDescription" rows="2" placeholder="Brief product description" required
+                class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600"></textarea>
+            </div>
+            <div>
+              <label for="productImage" class="block font-semibold text-rose-700 mb-1">Product Image</label>
+              <input type="file" id="productImage" name="productImage" accept="image/*" required
+                class="w-full px-1 py-1" />
+              <p class="text-xs text-pink-700 mt-1">Upload image maximum 5MB</p>
+            </div>
+
+            <button type="submit" class="bg-rose-700 hover:bg-rose-800 text-white font-bold rounded px-6 py-2 focus:outline-none focus:ring-4 focus:ring-rose-300 transition mt-2">Add Product</button>
+            <p id="addProductMessage" class="mt-3 font-semibold text-green-700 hidden"></p>
+          </form>
+        </section>
+
+        <section>
+          <h4 class="text-xl font-semibold mb-4 border-b border-rose-600 pb-2">Add Purchased Customer Media</h4>
+          <form id="addCustomerMediaForm" class="space-y-4" novalidate>
+            <div>
+              <label for="mediaProduct" class="block font-semibold text-rose-700 mb-1">Select Product</label>
+              <select id="mediaProduct" name="mediaProduct" required
+                class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600">
+                <option value="">-- Select product --</option>
+              </select>
+            </div>
+            <div>
+              <label for="mediaType" class="block font-semibold text-rose-700 mb-1">Media Type</label>
+              <select id="mediaType" name="mediaType" required
+                class="w-full border border-rose-400 rounded px-3 py-2 focus:ring-rose-600 focus:outline-none focus:border-rose-600">
+                <option value="">-- Select media type --</option>
+                <option value="photo">Photo</option>
+                <option value="video">Video</option>
+              </select>
+            </div>
+            <div>
+              <label for="mediaFile" class="block font-semibold text-rose-700 mb-1">Upload Media (Image or Video)</label>
+              <input type="file" id="mediaFile" name="mediaFile" accept="image/*,video/*" required 
+                class="w-full px-1 py-1" />
+              <p class="text-xs text-pink-700 mt-1">Max 20MB file size</p>
+            </div>
+
+            <button type="submit" class="bg-rose-700 hover:bg-rose-800 text-white font-bold rounded px-6 py-2 focus:outline-none focus:ring-4 focus:ring-rose-300 transition mt-2">Add Media</button>
+            <p id="addMediaMessage" class="mt-3 font-semibold text-green-700 hidden"></p>
+          </form>
+        </section>
+
+        <button id="adminLogoutBtn" class="mt-8 w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded font-semibold shadow hover:shadow-lg transition">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      "use strict";
+
+      // Admin password for demo
+      const ADMIN_PASSWORD = "admin123";
+
+      // Elements
+      const adminModal = document.getElementById("adminModal");
+      const adminLoginBtn = document.getElementById("adminLoginBtn");
+      const adminLoginBtnMobile = document.getElementById("adminLoginBtnMobile");
+      const closeAdminBtn = document.getElementById("closeAdminBtn");
+
+      const adminLoginScreen = document.getElementById("adminLoginScreen");
+      const adminDashboard = document.getElementById("adminDashboard");
+      const adminLoginForm = document.getElementById("adminLoginForm");
+      const adminLoginError = document.getElementById("adminLoginError");
+
+      const addProductForm = document.getElementById("addProductForm");
+      const addProductMessage = document.getElementById("addProductMessage");
+      const addCustomerMediaForm = document.getElementById("addCustomerMediaForm");
+      const addMediaMessage = document.getElementById("addMediaMessage");
+
+      const adminLogoutBtn = document.getElementById("adminLogoutBtn");
+
+      const collections = ["Bridal poshaks","Festival poshaks","Function poshaks","Casual poshaks"];
+
+      // Storage keys
+      const STORAGE_PRODUCTS_KEY = "baisahukam29_products";
+      const STORAGE_CUSTOMER_MEDIA_KEY = "baisahukam29_customer_media";
+      const STORAGE_ADMIN_LOGIN = "baisahukam29_admin_logged";
+
+      // Elements for product display
+      const productsContainer = document.getElementById("productsContainer");
+      const noProductsMsg = document.getElementById("noProductsMsg");
+
+      // Purchase form and elements
+      const purchaseForm = document.getElementById("purchaseForm");
+      const purchaseProductSelect = document.getElementById("purchaseProduct");
+      const productPriceInfo = document.getElementById("productPriceInfo");
+      const purchaseMessage = document.getElementById("purchaseMessage");
+
+      // Payment info
+      const gpayNumber = "+91 8830304067";
+      const gpayNumberElement = document.getElementById("gpayNumber");
+      const gpayNumberInfo = document.getElementById("gpayNumberInfo");
+      const gpayScannerInfo = document.getElementById("gpayScannerInfo");
+
+      // Customer Media Gallery
+      const customerMediaGallery = document.getElementById("customerMediaGallery");
+      const noCustomerMedia = document.getElementById("noCustomerMedia");
+
+      // Mobile menu
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      // Category cards clickable
+      const categoryCards = document.querySelectorAll("[data-category]");
+
+      // MediaProduct select for admin
+      const mediaProductSelect = document.getElementById("mediaProduct");
+      const mediaTypeSelect = document.getElementById("mediaType");
+      const mediaFileInput = document.getElementById("mediaFile");
+
+      let products = [];
+      let customerMedia = [];
+      let selectedCategory = null;
+
+      // Util: Save to localStorage
+      function saveData(key, data) {
+        localStorage.setItem(key, JSON.stringify(data));
+      }
+
+      // Util: Load from localStorage
+      function loadData(key) {
+        const raw = localStorage.getItem(key);
+        try {
+          return raw ? JSON.parse(raw) : [];
+        } catch {
+          return [];
+        }
+      }
+
+      // Check admin logged in
+      function isAdminLoggedIn() {
+        return localStorage.getItem(STORAGE_ADMIN_LOGIN) === "true";
+      }
+
+      // Set admin login state
+      function setAdminLoginState(loggedIn) {
+        localStorage.setItem(STORAGE_ADMIN_LOGIN, loggedIn ? "true" : "false");
+      }
+
+      // Render products filtered by category
+      function renderProducts(filterCategory) {
+        productsContainer.innerHTML = "";
+        const filtered = products.filter(p => p.category === filterCategory);
+        if (!filterCategory || filtered.length === 0) {
+          noProductsMsg.classList.remove("hidden");
+          return;
+        }
+        noProductsMsg.classList.add("hidden");
+
+        filtered.forEach(product => {
+          const card = document.createElement("article");
+          card.className = "bg-white p-4 rounded-lg shadow-md flex flex-col";
+
+          const img = document.createElement("img");
+          img.src = product.image || "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/63ded223-4e2a-4e7d-9850-f413b861e1d2.png";
+          img.alt = product.name + " image";
+          img.className = "w-full h-48 object-cover rounded-md mb-3";
+          img.onerror = () => { img.src = "https://placehold.co/600x400/png?text=Image+not+found"; };
+
+          const title = document.createElement("h5");
+          title.className = "text-rose-800 font-semibold text-lg mb-1";
+          title.textContent = product.name;
+
+          const price = document.createElement("p");
+          price.className = "text-pink-700 font-bold mb-2";
+          price.textContent = `₹ ${product.price.toLocaleString()}`;
+
+          const desc = document.createElement("p");
+          desc.className = "text-pink-600 text-sm flex-grow";
+          desc.textContent = product.description;
+
+          card.append(img, title, price, desc);
+
+          productsContainer.appendChild(card);
+        });
+      }
+
+      // Populate purchase product dropdown
+      function populatePurchaseProductSelect() {
+        purchaseProductSelect.innerHTML = '<option value="">-- Select a product --</option>';
+        products.forEach(p => {
+          const option = document.createElement("option");
+          option.value = p.id;
+          option.textContent = `${p.name} (${p.category}) - ₹${p.price.toLocaleString()}`;
+          purchaseProductSelect.appendChild(option);
+        });
+      }
+
+      // Populate media product select in admin panel
+      function populateMediaProductSelect() {
+        mediaProductSelect.innerHTML = '<option value="">-- Select product --</option>';
+        products.forEach(p => {
+          const option = document.createElement("option");
+          option.value = p.id;
+          option.textContent = `${p.name} (${p.category})`;
+          mediaProductSelect.appendChild(option);
+        });
+      }
+
+      // Generate simple unique ID
+      function generateId() {
+        return Date.now().toString(36) + Math.random().toString(36).slice(2);
+      }
+
+      // Handle category card click
+      categoryCards.forEach(card => {
+        card.addEventListener("click", () => {
+          selectedCategory = card.getAttribute("data-category");
+          renderProducts(selectedCategory);
+          window.location.hash = "#collections";
+        });
+      });
+
+      // Show/hide mobile menu
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Admin modal show/hide handlers
+      function showAdminModal() {
+        adminModal.classList.remove("hidden");
+        adminLoginError.classList.add("hidden");
+        addProductMessage.classList.add("hidden");
+        addMediaMessage.classList.add("hidden");
+
+        if (isAdminLoggedIn()) {
+          showAdminDashboard();
+        } else {
+          showAdminLogin();
+        }
+      }
+      function hideAdminModal() {
+        adminModal.classList.add("hidden");
+        adminLoginForm.reset();
+        addProductForm.reset();
+        addCustomerMediaForm.reset();
+        purchaseMessage.classList.add("hidden");
+      }
+
+      adminLoginBtn.addEventListener("click", showAdminModal);
+      adminLoginBtnMobile.addEventListener("click", () => {
+        showAdminModal();
+        mobileMenu.classList.add("hidden");
+      });
+      closeAdminBtn.addEventListener("click", hideAdminModal);
+
+      // Show login screen
+      function showAdminLogin() {
+        adminLoginScreen.classList.remove("hidden");
+        adminDashboard.classList.add("hidden");
+        adminLoginError.classList.add("hidden");
+      }
+      // Show dashboard screen
+      function showAdminDashboard() {
+        adminLoginScreen.classList.add("hidden");
+        adminDashboard.classList.remove("hidden");
+        addProductMessage.classList.add("hidden");
+        addMediaMessage.classList.add("hidden");
+        populateMediaProductSelect();
+      }
+
+      // Handle admin login form submit
+      adminLoginForm.addEventListener("submit", e => {
+        e.preventDefault();
+        const pass = adminLoginForm.adminPass.value.trim();
+        if (pass === ADMIN_PASSWORD) {
+          setAdminLoginState(true);
+          showAdminDashboard();
+          adminLoginForm.reset();
+        } else {
+          adminLoginError.classList.remove("hidden");
+        }
+      });
+
+      // Admin logout
+      adminLogoutBtn.addEventListener("click", () => {
+        if (confirm("Are you sure you want to logout?")) {
+          setAdminLoginState(false);
+          showAdminLogin();
+          hideAdminModal();
+        }
+      });
+
+      // Convert uploaded image/video file to base64 data URL (to store locally)
+      function fileToBase64(file) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = () => reject("File reading failed");
+          reader.readAsDataURL(file);
+        });
+      }
+
+      // Handle add product form submit
+      addProductForm.addEventListener("submit", async e => {
+        e.preventDefault();
+
+        // Validate file size max 5MB for image
+        const fileInput = addProductForm.productImage.files[0];
+        if (!fileInput) return alert("Please upload a product image.");
+        if (fileInput.size > 5 * 1024 * 1024) return alert("Product image size must be 5MB or less.");
+
+        try {
+          addProductMessage.classList.add("hidden");
+
+          const base64img = await fileToBase64(fileInput);
+          const newProduct = {
+            id: generateId(),
+            name: addProductForm.productName.value.trim(),
+            price: Number(addProductForm.productPrice.value),
+            category: addProductForm.productCategory.value,
+            description: addProductForm.productDescription.value.trim(),
+            image: base64img
+          };
+
+          products.push(newProduct);
+          saveData(STORAGE_PRODUCTS_KEY, products);
+
+          addProductForm.reset();
+          addProductMessage.textContent = `Product "${newProduct.name}" added successfully!`;
+          addProductMessage.classList.remove("hidden");
+          populatePurchaseProductSelect();
+          populateMediaProductSelect();
+          if (selectedCategory === newProduct.category) renderProducts(selectedCategory);
+
+        } catch (err) {
+          alert("Failed to read image file. Please try again.");
+        }
+      });
+
+      // Handle add customer media form submit
+      addCustomerMediaForm.addEventListener("submit", async e => {
+        e.preventDefault();
+
+        const fileInput = addCustomerMediaForm.mediaFile.files[0];
+        if (!fileInput) return alert("Please upload a media file.");
+        if (fileInput.size > 20 * 1024 * 1024) return alert("Media file size must be 20MB or less.");
+
+        const productId = addCustomerMediaForm.mediaProduct.value;
+        const mediaType = addCustomerMediaForm.mediaType.value;
+
+        if (!productId || !mediaType) return alert("Please select product and media type.");
+
+        try {
+          addMediaMessage.classList.add("hidden");
+
+          const base64media = await fileToBase64(fileInput);
+
+          // Store customer media entry
+          customerMedia.push({
+            id: generateId(),
+            productId,
+            type: mediaType,
+            src: base64media,
+            addedAt: new Date().toISOString()
+          });
+          saveData(STORAGE_CUSTOMER_MEDIA_KEY, customerMedia);
+
+          addCustomerMediaForm.reset();
+          addMediaMessage.textContent = `Customer media added successfully!`;
+          addMediaMessage.classList.remove("hidden");
+
+          renderCustomerMedia();
+
+        } catch (err) {
+          alert("Failed to read media file. Please try again.");
+        }
+      });
+
+      // Render customer media gallery
+      function renderCustomerMedia() {
+        customerMediaGallery.innerHTML = "";
+        if (customerMedia.length === 0) {
+          noCustomerMedia.classList.remove("hidden");
+          return;
+        }
+        noCustomerMedia.classList.add("hidden");
+
+        customerMedia.slice().reverse().forEach(media => {
+          const wrapper = document.createElement("div");
+          wrapper.className = "bg-white shadow rounded-lg p-2 flex flex-col items-center";
+
+          // Find product for media title
+          const prod = products.find(p => p.id === media.productId);
+          const prodName = prod ? prod.name : "Unknown Product";
+
+          if (media.type === "photo") {
+            const img = document.createElement("img");
+            img.src = media.src;
+            img.alt = `Customer photo showing product: ${prodName}`;
+            img.className = "w-full rounded-md object-cover max-h-48";
+            img.onerror = () => {
+              img.src = "https://placehold.co/600x400/png?text=Image+not+found";
+            };
+            wrapper.appendChild(img);
+          } else if (media.type === "video") {
+            const video = document.createElement("video");
+            video.controls = true;
+            video.className = "w-full rounded-md max-h-48";
+            video.src = media.src;
+            video.alt = `Customer video displaying product: ${prodName}`;
+            wrapper.appendChild(video);
+          }
+
+          const caption = document.createElement("p");
+          caption.className = "mt-2 text-pink-700 font-semibold text-center text-sm truncate max-w-xs";
+          caption.title = `Product: ${prodName}`;
+          caption.textContent = `Product: ${prodName}`;
+          wrapper.appendChild(caption);
+
+          customerMediaGallery.appendChild(wrapper);
+        });
+      }
+
+      // Purchase form logic
+      purchaseProductSelect.addEventListener("change", e => {
+        const pid = e.target.value;
+        if (!pid) {
+          productPriceInfo.textContent = "";
+          return;
+        }
+        const prod = products.find(p => p.id === pid);
+        if (!prod) {
+          productPriceInfo.textContent = "";
+          return;
+        }
+        productPriceInfo.textContent = `Price: ₹${prod.price.toLocaleString()}`;
+      });
+
+      // Payment method toggle info
+      purchaseForm.paymentMethod.forEach(radio => {
+        radio.addEventListener("change", () => {
+          const val = purchaseForm.paymentMethod.value;
+          if (val === "gpay_number") {
+            gpayNumberInfo.classList.remove("hidden");
+            gpayScannerInfo.classList.add("hidden");
+            gpayNumberElement.textContent = gpayNumber;
+          } else if (val === "gpay_scanner") {
+            gpayScannerInfo.classList.remove("hidden");
+            gpayNumberInfo.classList.add("hidden");
+          }
+        });
+      });
+
+      // Purchase form submit handler
+      purchaseForm.addEventListener("submit", e => {
+        e.preventDefault();
+        if (!purchaseForm.checkValidity()) {
+          purchaseForm.reportValidity();
+          return;
+        }
+
+        // Simulate purchase by showing confirmation message and clearing form
+        const productId = purchaseForm.purchaseProduct.value;
+        const product = products.find(p => p.id === productId);
+        if (!product) {
+          alert("Please select a valid product.");
+          return;
+        }
+
+        const custName = purchaseForm.customerName.value.trim();
+        const custPhone = purchaseForm.customerPhone.value.trim();
+        const custAddress = purchaseForm.customerAddress.value.trim();
+        const paymentMethod = purchaseForm.paymentMethod.value;
+
+        // Show confirmation message with delivery and payment details
+        purchaseMessage.textContent = `Thank you ${custName} for ordering "${product.name}". Your order will be delivered to: ${custAddress}. Please complete your payment via ${
+          paymentMethod === "gpay_number" ? "G Pay Number: " + gpayNumber : "G Pay Scanner (QR Code on this page)."
+        }`;
+        purchaseMessage.classList.remove("hidden");
+        purchaseForm.reset();
+        productPriceInfo.textContent = "";
+      });
+
+      // Initialization
+      function init() {
+        products = loadData(STORAGE_PRODUCTS_KEY);
+        customerMedia = loadData(STORAGE_CUSTOMER_MEDIA_KEY);
+
+        populatePurchaseProductSelect();
+
+        renderCustomerMedia();
+
+        if (selectedCategory) {
+          renderProducts(selectedCategory);
+        } else {
+          noProductsMsg.classList.remove("hidden");
+        }
+      }
+
+      // Run initialization after DOM ready
+      document.addEventListener("DOMContentLoaded", init);
+
+    })();
+  </script>
+</body>
+</html>
+
